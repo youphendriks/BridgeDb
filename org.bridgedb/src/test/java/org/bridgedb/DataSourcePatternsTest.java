@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< ours
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -5,11 +6,14 @@
 =======
 =======
 >>>>>>> ef38fbc2 (A bit more header clean up)
+=======
+>>>>>>> f08d154a (Added name to citation file)
 /*
  *BridgeDb,
  *An abstraction layer for identifier mapping services, both local and online.
  *Copyright (c) 2024 Youp Hendriks<youp_hendriks@hotmail.com>
  *Copyright (c) 2024 OpenPhacts
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> e9b78be9 (Added name to citation file)
 =======
@@ -21,6 +25,8 @@
 /*
  *Copyright (c) 2024 Youp Hendriks<youp_hendriks@hotmail.com>
 >>>>>>> theirs
+=======
+>>>>>>> f08d154a (Added name to citation file)
  *
  *Licensed under the Apache License, Version 2.0 (the "License");
  *you may not use this file except in compliance with the License.
@@ -30,6 +36,10 @@
  *WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  *See the License for the specific language governing permissions and limitations under the License.
  */
+<<<<<<< HEAD
+=======
+
+>>>>>>> f08d154a (Added name to citation file)
 package org.bridgedb;
 
 import static org.junit.jupiter.api.Assertions.*;
