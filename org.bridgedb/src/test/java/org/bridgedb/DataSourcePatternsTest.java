@@ -1,4 +1,21 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
 /*Copyright (c) 2024 Youp Hendriks <youp_hendriks@hotmail.com>
+=======
+=======
+>>>>>>> ef38fbc2 (A bit more header clean up)
+/*
+ *BridgeDb,
+ *An abstraction layer for identifier mapping services, both local and online.
+ *Copyright (c) 2024 Youp Hendriks<youp_hendriks@hotmail.com>
+ *Copyright (c) 2024 OpenPhacts
+<<<<<<< HEAD
+>>>>>>> e9b78be9 (Added name to citation file)
+=======
+=======
+/*Copyright (c) 2024 Youp Hendriks <youp_hendriks@hotmail.com>
+>>>>>>> 7a8142ea (A bit more header clean up)
+>>>>>>> ef38fbc2 (A bit more header clean up)
  *
  *Licensed under the Apache License, Version 2.0 (the "License");
  *you may not use this file except in compliance with the License.
@@ -16,6 +33,8 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Assertions;
 
+import static org.mockito.Mockito.*;
+
 /**
  * Tests the {@link org.bridgedb.DataSourcePatterns} class.
  * 
@@ -23,22 +42,22 @@ import org.junit.jupiter.api.Assertions;
  */
 public class DataSourcePatternsTest {
 
-  protected static DataSource key;
-
   @Test
   @DisplayName("Test getDataSourceMatches class, valid input")
   public void testgetDataSourceMatchesValid() {
     assertNotNull(DataSourcePatterns.getDataSourceMatches("F"));
   }
 
-  @Disabled
-  @Test
-  @DisplayName("Test getDataSourceMatches class, invalid input")
-  public void testgetDataSourceMatchesInvalid() {
-    Assertions.assertThrows(IllegalArgumentException.class,
-        () -> {
-          DataSourcePatterns.getDataSourceMatches("");
-        });
-  }
-
+  /**
+   * @Test
+   *       @DisplayName("Test getDataSourceMatches class, invalid input")
+   *       public void testgetDataSourceMatchesInvalid()
+   *       {
+   * @Mock private getDataSourceMatches
+   *       Assertions.assertThrows(IllegalArgumentException.class,
+   *       () -> {
+   *       DataSourcePatterns.getDataSourceMatches("");
+   *       });
+   *       }
+   */
 }
