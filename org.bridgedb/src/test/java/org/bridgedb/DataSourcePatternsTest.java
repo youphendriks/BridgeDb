@@ -1,3 +1,4 @@
+<<<<<<< ours
 <<<<<<< HEAD
 <<<<<<< HEAD
 /*Copyright (c) 2024 Youp Hendriks <youp_hendriks@hotmail.com>
@@ -16,6 +17,10 @@
 /*Copyright (c) 2024 Youp Hendriks <youp_hendriks@hotmail.com>
 >>>>>>> 7a8142ea (A bit more header clean up)
 >>>>>>> ef38fbc2 (A bit more header clean up)
+=======
+/*
+ *Copyright (c) 2024 Youp Hendriks<youp_hendriks@hotmail.com>
+>>>>>>> theirs
  *
  *Licensed under the Apache License, Version 2.0 (the "License");
  *you may not use this file except in compliance with the License.
