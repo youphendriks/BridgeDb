@@ -196,4 +196,12 @@ public class XrefTest {
 	public void testGetKnownUrl() {
 		System.out.println(new Xref("CHEBI:17855", CHEBI, true).getKnownUrl());
 	}
+
+	@Test
+	public void testCheckCorrectBioregistryIdentifier() {
+		//Xref xref = Xref.fromBioregistryIdentifier("uniprot:P12345");
+		//assertEquals("S:P12345:T", xref.toString());
+		Xref xref = Xref.fromBioregistryIdentifier("ensembl:ENSGALG00000007562");
+		assertEquals("En:ENSGALG00000007562:T", xref.toString());
+	}
 }
