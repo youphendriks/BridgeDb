@@ -14,31 +14,46 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.Assertions;
+
 
 /**
  * Tests the {@link org.bridgedb.DataSourcePatterns} class.
  * 
  * @author youphendriks
  */
-public class DataSourcePatternsTest {
-
+class DataSourcePatternsTest {
+  DataSourcePatterns dataSourcePatterns = new DataSourcePatterns();
   protected static DataSource key;
 
+  @Test
+  void dataSourcePatterns_validInput() {
+
+  }
+/**
+ * @Test
+ * void DataSourcePatterns_givenVoidReturnType_whenUsingDoThrow_thenExceptionIsThrown() {
+ *     DataSourcePatterns patternMock = mock(DataSource.class);
+ *     doThrow(IllegalStateException.class).when(patternMock)
+ *         .registerPattern(any(), any());
+ *
+ *    assertThrows(IllegalStateException.class, () -> patternMock.registerPattern("notKeyButString", "notValueButString"));
+ *}
+*/
   @Test
   @DisplayName("Test getDataSourceMatches class, valid input")
   public void testgetDataSourceMatchesValid() {
     assertNotNull(DataSourcePatterns.getDataSourceMatches("F"));
   }
 
-  @Disabled
   @Test
   @DisplayName("Test getDataSourceMatches class, invalid input")
   public void testgetDataSourceMatchesInvalid() {
-    Assertions.assertThrows(IllegalArgumentException.class,
-        () -> {
-          DataSourcePatterns.getDataSourceMatches("");
-        });
-  }
+    MyException thrown = assertThrows(
+        MyException.class,
+        () -> DataSourcePatterns.getDataSourceMatches(),
+        "Expected getDataSourceMatcher() to throw, but it didn't"
+    );
 
+    assertTrue(thrown.getMessage().contains("Stuff"));
+  }
 }
